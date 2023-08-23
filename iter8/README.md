@@ -37,7 +37,7 @@ spec:
 ```
 -->
 3. Install the Red Hat OpenShift Service Mesh component and its prerequisites as described [here](https://docs.openshift.com/container-platform/4.8/service_mesh/v2x/installing-ossm.html).
-4. Deploy a `ServiceMeshControlPlane` in project `istio-system`. Edit it to [disable automatic NetworkPolicy creation](https://docs.openshift.com/container-platform/4.13/service_mesh/v2x/ossm-traffic-manage.html#ossm-config-disable-networkpolicy_traffic-management). 
+4. Deploy a `ServiceMeshControlPlane` in project `istio-system` as described [here](https://docs.openshift.com/container-platform/4.8/service_mesh/v2x/ossm-create-smcp.html). Edit it to [disable automatic NetworkPolicy creation](https://docs.openshift.com/container-platform/4.13/service_mesh/v2x/ossm-traffic-manage.html#ossm-config-disable-networkpolicy_traffic-management). 
 5. Add your user project(s) to a [`ServiceMeshMemberRoll`](https://docs.openshift.com/container-platform/4.8/service_mesh/v2x/ossm-create-smcp.html).
 
 ## Using Iter8 in ODH

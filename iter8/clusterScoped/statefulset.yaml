@@ -21,7 +21,7 @@ spec:
         image: iter8/iter8:0.15
         imagePullPolicy: Always
         command: ["/bin/iter8"]
-        args: ["controllers", "-l", "info"]
+        args: ["controllers", "-l", "trace"]
         env:
         - name: CONFIG_FILE
           value: /config/config.yaml
