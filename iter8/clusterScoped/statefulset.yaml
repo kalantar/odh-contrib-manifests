@@ -1,3 +1,6 @@
+# comes from https://github.com/iter8-tools/iter8/tree/master/kustomize/controller
+# removed `runAsUser` since this is typically assigned at runtime on Red Hat OpenShift
+
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:
@@ -16,12 +19,13 @@ spec:
       serviceAccountName: iter8
       securityContext:
         runAsNonRoot: true
+        # runAsUser: 1001040000
       containers:
       - name: iter8-traffic
-        image: iter8/iter8:0.15
+        image: iter8/iter8:0.16
         imagePullPolicy: Always
         command: ["/bin/iter8"]
-        args: ["controllers", "-l", "trace"]
+        args: ["controllers", "-l", "info"]
         env:
         - name: CONFIG_FILE
           value: /config/config.yaml
