@@ -6,7 +6,7 @@ data:
   config.yaml: |
     clusterScoped: true
     defaultResync: 15m
-    image: iter8/iter8:0.15
+    image: iter8/iter8:0.16
     logLevel: info
     resourceTypes:
       cm:
