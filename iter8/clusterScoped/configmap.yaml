@@ -4,6 +4,7 @@ metadata:
   name: iter8
 data:
   config.yaml: |
+    clusterScoped: true
     defaultResync: 15m
     image: iter8/iter8:0.15
     logLevel: info
